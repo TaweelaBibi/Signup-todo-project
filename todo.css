@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background: rgb(44, 44, 107);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    width: 450px;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    animation: fadeIn 0.8s ease;
+}
+
+h1{
+    text-align: center;
+    color: #e30303;
+    margin-bottom: 20px;
+}
+
+input{
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+input:focus{
+    border-color:  rgb(44, 44, 107);
+}
+
+button{
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+#addBtn{
+    background: #4CAF50;
+    width: 100%;
+    font-size: 18px;
+    margin-top: 12px;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#addBtn:hover{
+    background:  rgb(44, 44, 107);
+    color: black;
+      transform: translateY(-2px);
+}
+
+li{
+    list-style: none;
+    background: #f8f8f8;
+    padding: 12px;
+    margin-top: 12px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    word-break: break-word;
+}
+
+li button{
+    padding: 8px 12px;
+    font-size: 14px;
+    
+}
+
+li button:first-of-type{
+    background: #2196F3;
+     transition: all 0.3s ease;
+     font-size: 16px;
+    
+}
+
+li button:first-of-type:hover{
+    background: rgb(44, 44, 107);
+    color: black;
+    transform: scale(1.05px);
+}
+
+li button:last-of-type{
+    background: #f44336;
+    font-size: 16px;
+     transition: all 0.3s ease;
+}
+
+li button:last-of-type:hover{
+    background: rgb(44, 44, 107);
+    color: black;
+    transform: scale(1.05px);
+}
+
+.error{
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+/* Responsive Design */
+@media (max-width: 768px){
+    .container{
+        width: 90%;
+        padding: 20px;
+    }
+    h1{
+        font-size: 28px;
+    }
+    input{
+        font-size: 15px;
+        padding: 10;
+    }
+    #addBtn{
+        width: 100%;
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    li{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    li button{
+        width: 100%;
+        margin-left: 0;
+    }
+}
